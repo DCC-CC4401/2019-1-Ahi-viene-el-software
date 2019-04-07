@@ -4,7 +4,11 @@
   <title>Ficha evaluación Administrador</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css">
-  <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" type="text/css" href="CSS/imagenesBotones.css">
+  <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css" id="bootstrap-css">
+
+  <script src="JS/popper.min.js"></script>
+
   <script src="Bootstrap/js/jquery-3.2.1.min.js"></script>
   <script src="Bootstrap/js/bootstrap.min.js"></script>
   <script src="JS/addNavBar.js"></script>
@@ -25,7 +29,16 @@
   <div class="row m-2">
     <!--- data table --->
     <div class="col">
-      <h4><img src="img/Data.png" alt="datos" width="30" height="30"> Datos </h4>
+      <div class="d-flex">
+            <div class="mr-auto p-2"><h4><img src="img/Data.png" alt="datos" width="30" height="30"> Datos </h4>  </div>
+            <div class="p-2"> 
+              <div class="text-right">
+                        <button type="button" class="btn btn-primary button-image edit-button">
+                          Editar
+                        </button>         
+                      </div>
+            </div>
+      </div>    
       <table class="table">
         <tbody>
           <tr>
@@ -54,10 +67,23 @@
     
     <!--- evaluadores list -->  
     <div class="col">
+<div class="d-flex">
+  <div class="mr-auto p-2">
       <h4> 
         <img src="img/ayudante.png" alt="Ayudante" width="30" height="30">
         Evaluadores 
-      </h4>
+      </h4></div>
+  <div class="p-2"> 
+    <div class="text-right">
+              <button type="button" class="btn btn-primary button-image edit-button">
+                Editar
+              </button>         
+            </div>
+  </div>
+</div>
+
+
+
 
       <ul class="list-group">
           <li class="list-group-item">Evaluador 1 </li>
@@ -81,37 +107,119 @@
   <div class="row m-2">
   <div class="col-2">
   <div class="row m-2">
-  <div class="list-group list-group-horizontal">
-    <a href="#" class="list-group-item list-group-item">Grupo 1</a>
-    <a href="#" class="list-group-item list-group-item">Grupo 2</a>
-    <a href="#" class="list-group-item list-group-item-primary">Grupo 3</a>
-    <a href="#" class="list-group-item list-group-item">Grupo 4</a>
 
-    <a href="#" class="list-group-item list-group-item-success">Grupo 5</a>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle disabled m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 1
+  </button>
+</div>
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle disabled m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 2
+  </button>
+  
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle disabled m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 3
+  </button>
+</div>
+<div class="dropdown">
+  <button class="btn btn-outline-secondary dropdown-toggle m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 4
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Natalia Marin Bravo </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Ángel Cano Hidalgo </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Eva Cortes Vargas </a>
   </div>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle disabled m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 5
+  </button>
+</div>
+
+
+</div>
+
+  </div>
+  <div class="row m-2">
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+<div class="dropdown">
+  <button class="btn btn-outline-secondary dropdown-toggle m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 6
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Ian Santos Ramos </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Celia Leon Gil </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Rubén Aguilar Ferrer </a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle disabled m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 7
+  </button>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle disabled m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 8
+  </button>
+</div>
+<div class="dropdown">
+  <button class="btn btn-outline-secondary dropdown-toggle m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 9
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Blanca Romero Nieto </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Juan Moreno Campos </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Jan Vila Benitez </a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-outline-secondary dropdown-toggle m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 10
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Francisco Ramos Hernandez </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Alicia Guerrero Sanchez</a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp;Guillem Blanco Cano </a>
+  </div>
+</div>
+
+
+</div>
   </div>
   <div class="row m-2">
   
-  <div class="list-group list-group-horizontal">
-    <a href="#" class="list-group-item list-group-item-success">Grupo 6</a>
-    <a href="#" class="list-group-item list-group-item-success">Grupo 7</a>
-    <a href="#" class="list-group-item list-group-item">Grupo 8</a>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
-    <a href="#" class="list-group-item list-group-item">Grupo 9</a>
-    <a href="#" class="list-group-item list-group-item">Grupo 10</a>
+<div class="dropdown">
+  <button class="btn btn-outline-secondary dropdown-toggle m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 11
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Anna Diaz Carrasco </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Iris Morales Medina </a>
+    <a class="dropdown-item"><input type="checkbox"/>&nbsp; Aina Marquez Benitez </a>
   </div>
-  </div>
-  <div class="row m-2">
-  
-  <div class="list-group list-group-horizontal">
-    <a href="#" class="list-group-item list-group-item-success">Grupo 11</a>
-    <a href="#" class="list-group-item list-group-item">Grupo 12</a>
-    <br>
-  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle disabled m-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Grupo 12
+</div>
+
   </div>
   </div>
 
- </div>
+ 
 </div>
 <br>
   <!-- rubrica asociada -->
@@ -120,7 +228,7 @@
     <div class="card">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-          Rúbrica del día 01/01/000 Curso Hola
+          Rúbrica del día 01/01/2030 Curso CC4401
         </a>
       </div>
       <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -141,7 +249,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Aspecto 1 de la rúbrica</th><td>No cumple</td><td>Cumple poco</td><td>Cumple un poco más</td><td>Cumple bastante</td><td>Cumple completamente</td>
+                  <th scope="row">Aspecto #1 de la rúbrica</th><td>No cumple</td><td>Cumple poco</td><td>Cumple un poco más</td><td>Cumple bastante</td><td>Cumple completamente</td>
                 </tr>
                 <tr>
                   <th scope="row">Aspecto #2 de la rúbrica</th><td>No cumple</td><td>Cumple poco</td><td>Cumple un poco más</td><td>Cumple bastante</td><td>Cumple completamente</td>
@@ -172,9 +280,14 @@
           </div>
         </div>
       </div>
+
+      <button type="button m-2" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+  Comenzar
+</button>
+
     </div>
   </div>
-  <br>
+  
   </div>
   
 
